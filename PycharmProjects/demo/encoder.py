@@ -1,5 +1,4 @@
 # Sebastian Jurado
-# Sebastian Jurado
 
 def encoder(original_password):
     encoded_password = ''
