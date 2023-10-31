@@ -9,6 +9,16 @@ def encoder(original_password):
         encoded_password += str(digit)
     return encoded_password
 
+
+def decoder(encoded_password):
+    decoded_password = ''
+    for i in encoded_password:
+        digit = int(i) - 3
+        if digit < 0:
+            digit += 10
+        decoded_password += str(digit)
+    return decoded_password
+
 def main():
     while True:
         print("Menu")
